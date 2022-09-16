@@ -119,12 +119,16 @@ public static class lista6
         }
         Console.WriteLine("O maior é: " + maior + ". E o menor é: " + menor);
     }
-    public static void Exercicio7()
+    public static void Exercicio7() // Deu merda !!
     {
         Console.WriteLine("Escreva 10 números");
-        int[] A = new int[10];
-        int maior = 0;
-        for (int i = 1; i < 10; i++)
+        int[] A = new int[11];
+        int maior, i = 1;
+        A[i] = int.Parse(Console.ReadLine());
+        maior = i;
+        
+
+        for (i = 2; i <= 10; i++)
         {
             A[i] = int.Parse(Console.ReadLine());
             if (A[i] > maior)
@@ -132,7 +136,25 @@ public static class lista6
                 maior = i;
             }
         }
-        Console.WriteLine("O maior é: " + maior);
+        Console.WriteLine("O maior vetor é: " + maior);
+    }
+    public static void Exercicio8()
+    {
+        Console.WriteLine("Escreva 15 notas para exibir a média");
+        double b = 0, media, soma = 0;
+        double[] A = new double[16];
+        for (int i = 1; i <= 15; i++)
+        {
+            A[i] = int.Parse(Console.ReadLine());
+            soma = soma + A[i];
+            b++;
+        }
+        media = soma/15;
+        Console.WriteLine("A média das notas é: " + media);
+    }
+    public static void Exercicio9()
+    {
+
     }
 }
 

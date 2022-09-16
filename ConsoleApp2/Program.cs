@@ -1,1 +1,1 @@
-﻿lista6.Exercicio7();
+﻿lista4.Exercicio5();
