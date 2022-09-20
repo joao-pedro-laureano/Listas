@@ -139,20 +139,20 @@
 
         Console.WriteLine("Digite 3 valores");
         a = int.Parse(Console.ReadLine());
-        a = maior;
-        a = menor;
+        maior = a;
+        menor = a;
 
         b = int.Parse(Console.ReadLine());
 
-        if (b > maior) b = maior;
-        if (b < menor) b = menor;
+        if (b > maior) maior = b;
+        if (b < menor) menor = b;
 
         c = int.Parse(Console.ReadLine());
-        if (c > maior) c = maior;
-        if (c < menor) c = menor;
-        if (a != maior && a != menor) a = meio;
-        if (b != maior && b != menor) b = meio;
-        if (c != maior && c != menor) c = meio;
+        if (c > maior) maior = c;
+        if (c < menor) menor = c;
+        if (a != maior && a != menor) meio = a;
+        if (b != maior && b != menor) meio = b;
+        if (c != maior && c != menor) meio = c;
 
         Console.WriteLine(a + " " + b + " " + c + "\n");
         Console.WriteLine("Ordem crescente: " + menor + " " + meio + " " + maior + "\n");
